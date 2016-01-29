@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.archana.myappportfolio.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:gravity="center_horizontal">
+
+    <!--
+        ScrollView used to make the buttons scrollable, when space is less, like in landscape
+        orientation. I know the RelativeLayout above is almost useless but I felt by removing it I
+        may be changing things that I currently do not fully understand. Besides ScrollView as
+        Root Element removes the phone skin from the preview.
+    -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/scrollView" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/my_title"
+                android:id="@+id/textView"
+                android:layout_marginTop="@dimen/top_margin"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:text="@string/media_streamer"
+                android:id="@+id/button"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="@dimen/top_margin"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                style="@style/ButtonStyle"
+                android:text="@string/super_duo1"
+                android:id="@+id/button2"
+                android:layout_below="@+id/button" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:text="@string/super_duo2"
+                android:id="@+id/button3"
+                android:layout_below="@+id/button2" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:text="@string/ant_terminator"
+                android:id="@+id/button4"
+                android:layout_below="@+id/button3" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:text="@string/materialize"
+                android:id="@+id/button5"
+                android:layout_below="@+id/button4" />
+
+            <Button
+                style="@style/ButtonStyle"
+                android:theme="@style/CapstoneTheme"
+                android:text="@string/capstone"
+                android:id="@+id/button6"
+                android:layout_below="@+id/button5"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
