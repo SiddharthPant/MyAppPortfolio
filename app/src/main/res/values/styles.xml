@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
         <!-- The default Udacious button coloring that I wanted for all buttons -->
         <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccentLight</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -31,6 +32,7 @@
     -->
     <style name="CapstoneTheme" parent="ThemeOverlay.AppCompat.Dark">
         <item name="colorButtonNormal">@color/colorSpecial</item>
+        <item name="colorControlHighlight">@color/colorSpecialLight</item>
     </style>
 
     <style name="ButtonStyle">

@@ -8,6 +8,7 @@
     </style>
 
     <style name="CapstoneTheme" parent="ThemeOverlay.AppCompat.Dark">
-        <item name="colorButtonNormal">@color/colorSpecial</item>
+        <item name="android:colorButtonNormal">@color/colorSpecial</item>
+        <item name="android:colorControlHighlight">@color/colorSpecialLight</item>
     </style>
 </resources>
